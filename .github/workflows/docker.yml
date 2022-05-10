@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - "main"
+  schedule:
+  # Run this every week:
+  - cron: "1 2 * * 1"
 
 jobs:
   docker:
